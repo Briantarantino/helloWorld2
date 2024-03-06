@@ -1,0 +1,12 @@
+p {
+    color: darkred;
+    font-size: small;
+}
+h2 {
+    display: block;
+    text-decoration: underline;
+}
+tr {
+    border: 3px;
+    border-color: black;
+}
