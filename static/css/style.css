@@ -1,12 +1,46 @@
+/*Setting paragraph text to be dark red and small size*/
 p {
     color: darkred;
     font-size: small;
 }
+
+/*Styling the second header's with a border and underline*/
 h2 {
-    display: block;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    padding: 10px;
+    width: 200px;
     text-decoration: underline;
 }
-tr {
-    border: 3px;
+
+/*Adding a border to to all table fields and headers*/
+table, td, th {
+    border-style: solid;
+    border-width: 3px;
     border-color: black;
+    border-collapse: collapse;
+}
+
+/*Creating a special paragraph selector using an ID to change the font and border of the text*/
+p#specialparagraph {
+    font-family: "Courier New";
+    border-style: dashed;
+    border-color: yellow;
+    padding: 5px;
+    width: 500px;
+}
+
+/*Using a class attribute to create a different style for the most important second header*/
+h2.mostimportant {
+    font-style: italic;
+    border-radius: 5px;
+    border-width: 7px;
+    border-color: red;
+}
+
+/*Using a rule block to apply to the image of the Smith logo as a class to specify correct dimensions*/
+img.logo {
+    width: "267";
+    height: "72";
 }
