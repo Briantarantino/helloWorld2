@@ -20,5 +20,15 @@ def about():
 def aboutcss():
     return render_template('about-css.html')
 
+@app.route('/favoritecourse')
+def favoritecourse():
+    print('You entered your favorite course as: ' + request.args.get('subject') + ' ' + request.args.get('course_number'))
+
+    return render_template('favorite-course.html')
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
 if __name__ == '__main__':
     app.run()
