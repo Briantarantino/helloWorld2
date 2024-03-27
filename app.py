@@ -20,12 +20,11 @@ def about():
 def aboutcss():
     return render_template('about-css.html')
 
-@app.route('/favoritecourse')
-def favoritecourse():
-    print('You entered your favorite subject as: ' + request.args.get('subject'))
-    print('You entered your favorite course as: ' + request.args.get('course_number'))
+@app.route('/favorite-course')
+def favorite_course():
 
-    return render_template('contact.html')
+
+    return render_template('favorite-course.html')
 
 @app.route('/contact', methods=['GET','POST'])
 def contact():
