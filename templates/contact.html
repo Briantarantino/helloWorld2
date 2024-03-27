@@ -60,7 +60,28 @@
         </div>
         <p><a href="{{ url_for('contact') }}">Complete form again</a></p>
         {% else %}
-
+        <form class="row g-3" action="{{  url_for(contact }}" method="post">
+            <div class="col-md-6">
+                <label for="first_name" class="form-label">First Name</label>
+                <input type="text" class="form-label" id="first_name" name="first_name">
+            </div>
+            <div class="col-md-6">
+                <label for="last_name" class="form-label">Last Name</label>
+                <input type="text" class="form-label" id="last_name" name="last_name">
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-label" id="email" name="email">
+            </div>
+            <div class="col-md-6">
+                <label for="phone_number" class="form-label">Phone Number</label>
+                <input type="tel" class="form-label" id="phone_number" name="phone_number">
+            </div>
+            <div class="col-12">
+                <button type="submit" class="button btn-primary">Submit</button>
+            </div>
+        </form>
+        {% endif %}
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
