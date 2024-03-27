@@ -22,9 +22,8 @@ def aboutcss():
 
 @app.route('/favorite-course')
 def favorite_course():
-
-
     return render_template('favorite-course.html')
+
 
 @app.route('/contact', methods=['GET','POST'])
 def contact():
