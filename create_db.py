@@ -19,7 +19,7 @@ with app.app_context():
     users = [
         {'username': 'student', 'email': 'student@umd.edu', 'first_name': 'Imma', 'last_name': 'Student',
             'password': generate_password_hash('studentpw', method='pbkdf2:sha256'), 'role': 'STUDENT'},
-        {'username': 'briant', 'email': 'briant@umd.edu', 'first_name':'Brian', 'last_name':'Tarantino',
+        {'username': 'briant', 'email': 'briant@terpmail.umd.edu', 'first_name':'Brian', 'last_name':'Tarantino',
             'password': generate_password_hash('briant', method='pbkdf2:sha256'), 'role':'STUDENT'},
         {'username': 'manager', 'email': 'manager@umd.edu', 'first_name':'Joe', 'last_name':'King',
             'password': generate_password_hash('managerpw', method='pbkdf2:sha256'), 'role':'MANAGER'},
